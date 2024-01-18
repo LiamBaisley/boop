@@ -28,5 +28,6 @@ jobs:
           with:
             version: latest
             args: release --rm-dist --snapshot
+            workdir: ./src/boop
           env:
             GITHUB_TOKEN: ${{ secrets.PAT }}
