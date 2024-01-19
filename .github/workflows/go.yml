@@ -31,3 +31,20 @@ jobs:
             workdir: ./src/boop
           env:
             GITHUB_TOKEN: ${{ secrets.PAT }}
+        - name: GH Release
+          uses: softprops/action-gh-release@v0.1.15
+          with:
+            name: boop-release
+            # Repository to make releases against, in <owner>/<repo> format
+            repository: LiamBaisley/boop
+            # Authorized secret GitHub Personal Access Token. Defaults to github.token
+            token: ${{ secrets.PAT }}
+            files:
+              dist\boop_linux_386\boop
+              dist\boop_linux_amd64_v1\boop
+              dist\boop_darwin_amd64_v1\boop
+              dist\boop_darwin_arm64\boop
+              dist\boop_windows_amd64_v1\boop.exe
+              dist\boop_windows_arm64\boop.exe
+              dist\boop_windows_386\boop.exe
+                  
