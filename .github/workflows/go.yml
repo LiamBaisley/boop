@@ -41,5 +41,5 @@ jobs:
             token: ${{ secrets.PAT }}
             tag_name: boop-release
             files:
-              dis/boop_*
+              dist/boop_*
                   
