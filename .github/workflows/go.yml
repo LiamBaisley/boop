@@ -41,11 +41,5 @@ jobs:
             token: ${{ secrets.PAT }}
             tag_name: boop-release
             files:
-              dist\boop_linux_386\boop
-              dist\boop_linux_amd64_v1\boop
-              dist\boop_darwin_amd64_v1\boop
-              dist\boop_darwin_arm64\boop
-              dist\boop_windows_amd64_v1\boop.exe
-              dist\boop_windows_arm64\boop.exe
-              dist\boop_windows_386\boop.exe
+              dis/boop_*
                   
