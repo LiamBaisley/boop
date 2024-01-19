@@ -39,7 +39,7 @@ jobs:
             repository: LiamBaisley/boop
             # Authorized secret GitHub Personal Access Token. Defaults to github.token
             token: ${{ secrets.PAT }}
-            tag: boop-release
+            tag_name: boop-release
             files:
               dist\boop_linux_386\boop
               dist\boop_linux_amd64_v1\boop
